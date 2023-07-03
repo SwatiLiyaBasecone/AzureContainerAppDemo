@@ -31,7 +31,7 @@ jobs:
       with:
         push: true
         tags: swaticr.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_7b49f95cd9b745d69091930f78a76e79 }}/azurecontainerappdemo:${{ github.sha }}
-        file: ./Dockerfile
+        file: ./AzureContainerAppDemo/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
